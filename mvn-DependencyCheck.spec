@@ -4,12 +4,13 @@
 #
 Name     : mvn-DependencyCheck
 Version  : 4.0.2
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
 Source0  : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
-Source1  : https://repo1.maven.org/maven2/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.jar
-Source2  : https://repo1.maven.org/maven2/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.pom
-Source3  : ttps://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.pom
+Source1  : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.pom
+Source2  : https://repo1.maven.org/maven2/org/owasp/dependency-check-parent/4.0.2/dependency-check-parent-4.0.2.pom
+Source3  : https://repo1.maven.org/maven2/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.jar
+Source4  : https://repo1.maven.org/maven2/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0 MIT
@@ -56,14 +57,17 @@ cp licenses/velocity/LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-Dep
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-core/4.0.2
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.jar
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.pom
-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-core/4.0.2
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.pom
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-parent/4.0.2
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-parent/4.0.2/dependency-check-parent-4.0.2.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.pom
 
 
 %files
@@ -73,6 +77,7 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-ch
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
 /usr/share/java/.m2/repository/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.pom
+/usr/share/java/.m2/repository/org/owasp/dependency-check-parent/4.0.2/dependency-check-parent-4.0.2.pom
 /usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.jar
 /usr/share/java/.m2/repository/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.pom
 
