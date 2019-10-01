@@ -4,7 +4,7 @@
 #
 Name     : mvn-DependencyCheck
 Version  : 4.0.2
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
 Source0  : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
 Source1  : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/3.1.0/dependency-check-core-3.1.0.jar
@@ -20,7 +20,7 @@ Source10  : https://repo1.maven.org/maven2/org/owasp/dependency-check-utils/4.0.
 Source11  : https://repo1.maven.org/maven2/org/owasp/dependency-check-utils/4.0.2/dependency-check-utils-4.0.2.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : Apache-2.0 MIT
+License  : Apache-2.0 Distributable IPL-1.0 MIT MPL-1.0
 Requires: mvn-DependencyCheck-data = %{version}-%{release}
 Requires: mvn-DependencyCheck-license = %{version}-%{release}
 BuildRequires : apache-maven
@@ -57,6 +57,7 @@ cp LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/LICEN
 cp licenses/StupidTablePlugin/LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/licenses_StupidTablePlugin_LICENSE.txt
 cp licenses/commons-compress/LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/licenses_commons-compress_LICENSE.txt
 cp licenses/commons-io/LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/licenses_commons-io_LICENSE.txt
+cp licenses/h2database/license.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/licenses_h2database_license.txt
 cp licenses/jquery/MIT-LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/licenses_jquery_MIT-LICENSE.txt
 cp licenses/jsoup/LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/licenses_jsoup_LICENSE.txt
 cp licenses/lucene/LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-DependencyCheck/licenses_lucene_LICENSE.txt
@@ -122,6 +123,7 @@ cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/owasp/dependency-c
 /usr/share/package-licenses/mvn-DependencyCheck/licenses_StupidTablePlugin_LICENSE.txt
 /usr/share/package-licenses/mvn-DependencyCheck/licenses_commons-compress_LICENSE.txt
 /usr/share/package-licenses/mvn-DependencyCheck/licenses_commons-io_LICENSE.txt
+/usr/share/package-licenses/mvn-DependencyCheck/licenses_h2database_license.txt
 /usr/share/package-licenses/mvn-DependencyCheck/licenses_jquery_MIT-LICENSE.txt
 /usr/share/package-licenses/mvn-DependencyCheck/licenses_jsoup_LICENSE.txt
 /usr/share/package-licenses/mvn-DependencyCheck/licenses_lucene_LICENSE.txt
