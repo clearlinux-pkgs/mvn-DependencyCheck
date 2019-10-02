@@ -4,7 +4,7 @@
 #
 Name     : mvn-DependencyCheck
 Version  : 4.0.2
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
 Source0  : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/4.0.2/dependency-check-core-4.0.2.jar
 Source1  : https://repo1.maven.org/maven2/org/owasp/dependency-check-core/3.1.0/dependency-check-core-3.1.0.jar
